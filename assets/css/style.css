@@ -18,8 +18,9 @@ body {
 }
 
 .banner-inner, .title, .content {
-    width: 960px;
-    margin-left: 25%;
+    width: auto;
+    max-width: 960px;
+    margin: auto;
 }
 
 header {
@@ -38,7 +39,6 @@ nav {
     text-align: right;
     color: #777777;
     width: 75%;
-    float: right;
     position: relative;
     top: -50px;
     left: 65px;
@@ -82,7 +82,8 @@ p, form {
 .port-img {
     float: left;
     padding-right: 3%;
-    width: 200px;
+    width: auto;
+    max-width: 200px;
 }
 
 .port-title {
@@ -132,4 +133,15 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+     header {
+         width: 100%;
+         float: none;
+     }
+
+     nav {
+         width: 100%;
+     }
 }
