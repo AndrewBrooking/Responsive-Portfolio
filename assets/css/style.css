@@ -143,5 +143,9 @@ footer {
 
      nav {
          width: 100%;
+         position: relative;
+         top: 0px;
+         left: 0px;
+         text-align: center;
      }
 }
